@@ -1,37 +1,41 @@
-# tech-blog
+# Tech Blog
 
-# Project: Tech Blog
-  
-   [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-  # Description
-   
 
-  # Table of Contents 
-   * [Installation](#-Installation)
-   * [Usage](#-Usage)
-   * [License](#-License)
-   * [Contributing](#-Contributing)
-   * [Tests](#-Tests)
-   * [Questions](#-Contact-Information)
-    * [Deployment](#-Deployment)
-    
-  # Installation
-   Clone the repository, install dependencies, then run npm start in your terminal. 
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+## Description
 
-  # License 
-   Mozilla Public License
+This is a blog where users can log in to make short posts. It's deployed on heroku, and uses handlebars to dynamically generate browser content. 
 
-  # Contributing 
-  It's open source! Just email me.
 
-  # Tests
-  N/A
+## Table of Contents
 
-  # Contact Information 
+* [Deployed Application](#deployed-application)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Contact](#contact-information)
+
+
+
+## Deployed Application 
+
+[Tech Blog](https://stormy-inlet-48419.herokuapp.com/)<br />
+
+
+## Usage
+
+Users can write notes and save them. Optionally clone repository and run npm start in main directory to run locally. Make sure to log in!
+
+## License
+
+Open source per Mozilla Public License.
+
+## Contributing 
+It's open source! Just email me at the address provided below.
+
+ 
+## Contact Information 
   * GitHub Username: HibiAdelei
   * If you need to reach me for any reason, please email me.
   * Contact Email: lilyadelame@gmail.com
-  
-  # Deployment 
-  * The app is deployed at https://hibiadelei.github.io/tech-blog/
  
