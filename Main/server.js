@@ -3,7 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const helpers = require('./utils/helpers');
-const mongoose = require('mongoose');
+const uri = process.env.MONGODB_URI;
 const hbs = exphbs.create({ helpers });
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,8 +24,6 @@ const sess = {
 app.use(session(sess));
 
 
-
-
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
@@ -34,16 +32,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers'));
-
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  },
-);
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}!`);
